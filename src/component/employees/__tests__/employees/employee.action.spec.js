@@ -35,7 +35,7 @@ describe("fetchEmployeeAction()", () => {
 
   it("should dispatch FAILURE action when remote not available", () => {
     apiService.fetchEmployeesAsync = jest.fn(() =>
-      Promise.reject(new Error("an error ocurred"))
+      Promise.reject(new Error(errorMsg))
     );
     spy = jest.fn();
     const action = fetchEmployeeAction();
