@@ -30,6 +30,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 # Screenshot
 
-|           Header Page           | 
-| :-----------------------------: | :-----------------------------: |
+|           Code Coverage         | 
+| :-----------------------------: | 
 | ![screenshot](./img/coverage.png) |
