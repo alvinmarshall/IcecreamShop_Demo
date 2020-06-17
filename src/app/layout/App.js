@@ -2,7 +2,9 @@ import React from 'react';
 
 function App(props) {
   return (
-      <div></div>
+      <div>
+        All outputs are been displayed in console or use redux devtools extension
+      </div>
   );
 }
 

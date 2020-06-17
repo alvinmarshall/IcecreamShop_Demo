@@ -1,21 +1,20 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import App from './app/layout/App';
-// import * as serviceWorker from './serviceWorker';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './app/layout/App';
 
 import configStore from "./app/store/config_store";
 import { fetchEmployeeAction } from "./component/employees/reducer/employees.action";
+import { addProductToFreezerAction, updateTemperatureAction } from "./component/freezer/reducer/freezer.action";
+import { MOCHA } from "./component/flavors/flavors.contant";
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-
-// // If you want your app to work offline and load faster, you can change
-// // unregister() to register() below. Note this comes with some pitfalls.
-// // Learn more about service workers: https://bit.ly/CRA-PWA
-// serviceWorker.unregister();
-
+configStore.dispatch(addProductToFreezerAction(MOCHA,12))
+configStore.dispatch(updateTemperatureAction(-5))
 configStore.dispatch(fetchEmployeeAction());
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+
