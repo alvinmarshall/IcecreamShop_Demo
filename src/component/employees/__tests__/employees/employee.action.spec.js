@@ -9,7 +9,7 @@ import {
 describe("fetchEmployeeAction()", () => {
   let spy;
   const fakeUser = [{ name: {}, picture: {} }];
-  const errorMsg = "an error ocurred";
+  const errorMsg = "an error occurred";
 
   it("should dispatch REQUEST action when dispatched", () => {
     spy = jest.fn();
