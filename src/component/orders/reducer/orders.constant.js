@@ -1,0 +1,11 @@
+export const PLACE_ORDER = "PLACE_ORDER";
+export const FULFILL_ORDER = "FULFILL_ORDER";
+export const PAY_FOR_ORDER = "PAY_FOR_ORDER";
+export const CANCEL_ORDER = "CANCEL_ORDER";
+
+export const ORDER_STATUS = {
+  PAID: "PAID",
+  FULFILLED: "FULFILLED",
+  PENDING: "PENDING",
+  CANCELLED: "CANCELLED",
+};
